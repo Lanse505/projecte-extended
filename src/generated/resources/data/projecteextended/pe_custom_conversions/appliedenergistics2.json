@@ -1,0 +1,48 @@
+{
+  "comment": "Set default conversions for Applied Energistics 2",
+  "values": {
+    "before": {
+      "ae2:silicon_press": 1024,
+      "ae2:logic_processor_press": 2048,
+      "ae2:calculation_processor_press": 4096,
+      "ae2:engineering_processor_press": 8192,
+      "ae2:name_press": 1024,
+      "ae2:certus_quartz_crystal": 256
+    },
+    "conversion": [
+      {
+        "output": "ae2:certus_quartz_crystal",
+        "ingredients": [
+          "ae2:certus_crystal_seed"
+        ]
+      },
+      {
+        "output": "ae2:charged_certus_quartz_crystal",
+        "ingredients": [
+          "ae2:certus_quartz_crystal"
+        ]
+      },
+      {
+        "output": "ae2:certus_quartz_dust",
+        "ingredients": [
+          "ae2:certus_quartz_crystal"
+        ]
+      },
+      {
+        "output": "ae2:fluix_dust",
+        "count": 2,
+        "ingredients": [
+          "ae2:charged_certus_quartz_crystal",
+          "#forge:dusts/redstone",
+          "minecraft:quartz"
+        ]
+      },
+      {
+        "output": "ae2:fluix_crystal",
+        "ingredients": [
+          "ae2:fluix_crystal_seed"
+        ]
+      }
+    ]
+  }
+}

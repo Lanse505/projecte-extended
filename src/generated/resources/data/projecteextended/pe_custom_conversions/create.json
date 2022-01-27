@@ -1,0 +1,8 @@
+{
+  "comment": "Set defaults conversions for Create",
+  "values": {
+    "before": {
+      "create:zinc_ingot": 128
+    }
+  }
+}
